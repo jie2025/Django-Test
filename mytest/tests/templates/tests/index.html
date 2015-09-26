@@ -1,0 +1,11 @@
+<h1>ShortCut Key Command</h1>
+
+{% if latest_key_list %}
+    <ul>
+    {% for key in latest_key_list %}
+        <li><a href="/tests/{{ key.id }}/">{{ key.key_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tests are available.</p>
+{% endif %}

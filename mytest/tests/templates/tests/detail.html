@@ -1,0 +1,6 @@
+<h1>{{ key.key_text }}</h1>
+<ul>
+{% for desc in key.desc_set.all %}
+    <li>{{ desc.desc_text }}</li>
+{% endfor %}
+</ul>
